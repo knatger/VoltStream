@@ -20,7 +20,9 @@ a {
   color: inherit;
 }
 
-li {
+ul, li {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -29,8 +31,62 @@ img {
   display: block;
 }
 
+.button {
+  background: #F2323D;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 1160px;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 98px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.callback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.callback__number {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+.callback__text {
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.hero {
+  display: flex;
+}
+.hero__text {
+  max-width: 562px;
+}
+.hero__title {
+  max-width: 526px;
+  font-weight: inherit;
+  padding-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */
