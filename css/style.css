@@ -65,6 +65,23 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: inherit;
 }
 
+h1 {
+  font-size: 36px;
+  line-height: 130%;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -103,13 +120,13 @@ h1, h2, h3, h4, h5, h6, p {
 
 .hero {
   display: flex;
+  margin-bottom: 96.5px;
 }
 .hero__text {
   max-width: 560px;
 }
 .hero__title {
   width: 526px;
-  line-height: 130%;
   padding-bottom: 20px;
 }
 .hero__descriptions {
@@ -119,21 +136,25 @@ h1, h2, h3, h4, h5, h6, p {
 .hero__button {
   display: inline-block;
   padding: 20px 32px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
-.hero .benefits {
+.hero__image {
+  margin-top: -100px;
+  margin-left: -100px;
+  margin-right: -150px;
+  width: 968px;
+}
+
+.benefits {
   display: flex;
   align-items: center;
 }
-.hero .benefits__item {
+.benefits__item {
   position: relative;
   line-height: 120%;
-  margin-right: 40px;
+  padding-right: 20px;
 }
-.hero .benefits__item img {
-  margin-bottom: 16px;
-}
-.hero .benefits__item::before {
+.benefits__item::before {
   content: "";
   display: block;
   width: 1px;
@@ -143,4 +164,62 @@ h1, h2, h3, h4, h5, h6, p {
   left: 0;
   transform: translate(0, 50%);
   background-color: #E9E9E9;
+}
+.benefits__item img {
+  margin-left: 13px;
+  margin-bottom: 16px;
+}
+.benefits__item span {
+  display: inline-block;
+  margin-left: 13px;
+}
+
+.about {
+  margin-top: 56.5px;
+}
+.about__title {
+  max-width: 500px;
+  margin-bottom: 40px;
+}
+.about__specialization {
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about__item {
+  display: flex;
+  width: 48%;
+  margin-bottom: 60px;
+}
+.about__text {
+  padding-left: 30px;
+}
+.about img {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+.about__subtitle {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.about__description {
+  line-height: 120%;
+}
+.about__element {
+  display: flex;
+  margin-bottom: 12px;
+  line-height: 140%;
+}
+.about__element::before {
+  content: "";
+  margin-top: 9px;
+  margin-right: 13px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+.about__screenshoot {
+  margin-bottom: 80px;
 }/*# sourceMappingURL=style.css.map */

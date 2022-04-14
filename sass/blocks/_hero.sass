@@ -1,0 +1,45 @@
+
+.hero
+  display: flex
+  margin-bottom: 96.5px
+  &__text
+    max-width: 560px
+  &__title
+    width: 526px
+    padding-bottom: 20px
+  &__descriptions
+    width: 350px
+    margin-bottom: 50px
+  &__button
+    display: inline-block
+    padding: 20px 32px
+    margin-bottom: 100px
+  &__image
+    margin-top: -100px
+    margin-left: -100px
+    margin-right: -150px
+    width: 968px
+
+.benefits
+  display: flex
+  align-items: center
+  &__item
+    position: relative
+    line-height: 120%
+    padding-right: 20px
+    &::before
+      content: ''
+      display: block
+      width: 1px
+      height: 92px
+      position: absolute
+      top: -50%
+      left: 0
+      transform: translate(0, 50%)
+      background-color: #E9E9E9
+    img
+      margin-left: 13px
+      margin-bottom: 16px
+    span
+      display: inline-block
+      margin-left: 13px
